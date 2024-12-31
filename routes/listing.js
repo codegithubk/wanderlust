@@ -50,7 +50,7 @@ router
     wrapAsync(listingController.updateListing)
   )
   //delete route
-  .delete(isLoggedIn, isOwner, wrapAsync(listingController.destroyListing));
+  .delete(isLoggedIn, isOwner, wrapAsync(listingController.deleteListing));
 
 // //index route
 // router.get("/", wrapAsync(listingController.index));
