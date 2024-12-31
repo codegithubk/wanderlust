@@ -1,0 +1,148 @@
+body{
+  font-family: "Plus Jakarta Sans", serif !important;
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row is the default (horizontal layout).
+When you explicitly set flex-direction: column, the layout becomes vertical. */
+  min-height: 100vh;
+}
+
+.container{
+  flex: 1;
+}
+
+/* How flex: 1 Works
+Filling Available Space:
+
+The item will expand to take up any available space in the parent container.
+If there are multiple items with flex: 1, they will evenly share the available space.
+Adjusting Dynamically:
+
+If other items in the container have different flex values, the available space will be distributed proportionally based on the flex-grow values.
+Resizing with Shrinkage:
+
+If the parent container's width or height becomes smaller, the item can shrink proportionally, depending on the flex-shrink value. */
+
+
+/* Navbar*/
+.navbar {
+    height: 5rm;
+    background-color: white;
+}
+
+.fa-medium {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important; 
+/* important is used to override this styling to bootstrap styling */
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+    /* margin-right: 1rem; */
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: rgb(242, 238, 238);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* cards */
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+    /* text-decoration: none !important; */
+}
+
+.card-text{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* card effects */
+/* card ke upar kuch likhna ho ya kuch krna ho */
+.card-img-overlay{
+    opacity: 0; 
+    /* invisible */
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    /* visible (for fully opaque =1) */
+    background-color: white;
+}
+
+/* New page */
+.add-btn{
+    background-color: #fe424d !important;
+    border-color: none !important;
+}
+
+/* Edit page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border-color: none !important;
+}
+
+/* Show page */
+.show-img{
+    height: 30vh !important;
+    object-fit: cover !important;
+}
+
+.btns{
+    display: flex;
+
+}
+
+.show-card{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    
+}
+
+/* Map */
+ #map { 
+    height: 400px;
+    width: 80vh;
+ }

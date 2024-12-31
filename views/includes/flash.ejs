@@ -1,0 +1,32 @@
+<% if(success && success.length){ %>
+
+<div class="alert alert-success col-6 offset-3 mt-1" role="alert alert-dismissible fade show">
+  <%= success %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
+<!-- body se just pehle flash ko rkhenge kyuki flash ko sabse top pe dikhayenge -->
+
+<!-- alert ke andr dismiss krne ka bhi bootstrap hi -->
+<!-- res.local ke andr jo success create kiya hi vo ek array hi -->
+
+
+<% if(error && error.length){ %>
+
+    <div class="alert alert-danger col-6 offset-3 mt-1" role="alert alert-dismissible fade show">
+      <%= error %>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <% } %>
+
+
